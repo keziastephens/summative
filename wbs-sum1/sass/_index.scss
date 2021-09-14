@@ -9,12 +9,11 @@
 }
 
 .intro-div__one{
-    background: black;
+    background: rgba(0,0,0,0.5);
     height: 100%;
     width: 55%;
     display: flex;
     justify-self: flex-end;
-    opacity: 50%;
     float: right;
 }
 
@@ -374,7 +373,7 @@ border-radius: 360%;
 .index-grid__six{
     grid-column: 17/21;
     grid-row: 1/13;
-    background: rgb(71, 178, 185);
+    background: url(../img/index-grid/Loxogramme-dictyopteris.jpeg);
     margin-bottom: 0.5rem;
     margin-right: 0.5rem;
     background-position: center;
@@ -386,7 +385,7 @@ border-radius: 360%;
         color: white;
         font-size: 1.5rem;
         position:absolute;                 
-        top:0;                         
+        bottom:0;                         
         left:0;
         padding: 0.5rem;
         font-family: 'Open Sans', sans-serif;
@@ -398,7 +397,7 @@ border-radius: 360%;
 .index-grid__seven{
     grid-column: 17/21;
     grid-row: 13/21;
-    background: rgb(75, 4, 4);
+    background: url(../img/index-grid/Neomyrtus-pedunculata.jpeg);
     margin-bottom: 0.5rem;
     margin-right: 0.5rem;
     background-position: center;
@@ -410,7 +409,7 @@ border-radius: 360%;
         color: white;
         font-size: 1.5rem;
         position:absolute;                 
-        top:0;                         
+        bottom:0;                         
         left:0;
         padding: 0.5rem;
         font-family: 'Open Sans', sans-serif;

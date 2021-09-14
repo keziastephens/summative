@@ -34,12 +34,11 @@
   .membership-welcome__container .membership-welcome__paragraph {
     font-size: 1.5rem;
     font-family: 'Open sans', 'sans-serif';
-    width: 50%;
+    width: 60%;
     padding-top: 2rem; }
   .membership-welcome__container .membership-welcome__signup {
     font-size: 1.5rem;
-    font-family: 'Open sans', 'sans-serif';
-    padding-top: 40%; }
+    font-family: 'Open sans', 'sans-serif'; }
   .membership-welcome__container .membership-arrow {
     height: 20%; }
   .membership-welcome__container .membership-welcome__photo {
@@ -53,5 +52,48 @@
       height: 80%;
       width: 80%;
       background: crimson; }
+
+.membership-break {
+  height: 40vh;
+  width: 100vw;
+  background: yellow; }
+
+.membership-form__container {
+  height: 200vh;
+  width: 100vw;
+  background: green;
+  display: flex; }
+  .membership-form__container .membership-form__left {
+    height: 100%;
+    width: 60%;
+    background: pink; }
+  .membership-form__container .membership-form__right {
+    height: 100%;
+    width: 40%;
+    background: powderblue;
+    display: flex;
+    flex-wrap: wrap; }
+    .membership-form__container .membership-form__right .form-right__info {
+      height: 35%;
+      width: 100%;
+      background: red;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+      .membership-form__container .membership-form__right .form-right__info .form-right__header {
+        font-size: 4rem;
+        font-family: 'Cinzel';
+        width: 80%; }
+      .membership-form__container .membership-form__right .form-right__info .form-right__paragraph {
+        font-size: 1.5rem;
+        font-family: 'Open sans', 'sans-serif';
+        width: 50%;
+        padding-top: 3rem; }
+    .membership-form__container .membership-form__right .form-right__photo {
+      height: 65%;
+      width: 100%;
+      background: orange; }
 
 /*# sourceMappingURL=membership.css.map */

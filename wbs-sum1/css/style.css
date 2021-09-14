@@ -64,12 +64,11 @@ body {
   background-size: cover; }
 
 .intro-div__one {
-  background: black;
+  background: rgba(0, 0, 0, 0.5);
   height: 100%;
   width: 55%;
   display: flex;
   justify-self: flex-end;
-  opacity: 50%;
   float: right; }
 
 .intro-div__text {
@@ -323,7 +322,7 @@ body {
 .index-grid__six {
   grid-column: 17/21;
   grid-row: 1/13;
-  background: #47b2b9;
+  background: url(../img/index-grid/Loxogramme-dictyopteris.jpeg);
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
   background-position: center;
@@ -334,7 +333,7 @@ body {
     color: white;
     font-size: 1.5rem;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     padding: 0.5rem;
     font-family: 'Open Sans', sans-serif;
@@ -343,7 +342,7 @@ body {
 .index-grid__seven {
   grid-column: 17/21;
   grid-row: 13/21;
-  background: #4b0404;
+  background: url(../img/index-grid/Neomyrtus-pedunculata.jpeg);
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
   background-position: center;
@@ -354,7 +353,7 @@ body {
     color: white;
     font-size: 1.5rem;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     padding: 0.5rem;
     font-family: 'Open Sans', sans-serif;
@@ -462,7 +461,7 @@ body {
     color: white; }
 
 .contact-container {
-  min-height: 80vh;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -601,7 +600,105 @@ textarea {
   .newsletter-container .newsletter-photo {
     height: 100%;
     width: 50%;
-    background: salmon; }
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .newsletter-container .newsletter-photo .newsletter-pic {
+      height: 80%;
+      width: 80%;
+      background: yellow; }
+
+.publications-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex; }
+  .publications-container .publications-photo {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .publications-container .publications-photo .publications-photo__pic {
+      height: 80%;
+      width: 80%;
+      background: yellowgreen; }
+  .publications-container .publications-info {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .publications-container .publications-info .publications-info__header {
+      font-family: 'Cinzel', serif;
+      font-size: 4rem;
+      padding: 2rem; }
+    .publications-container .publications-info .publications-info__paragraph {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.5rem;
+      width: 50%;
+      text-align: center;
+      padding-bottom: 4rem; }
+    .publications-container .publications-info .publications-btn {
+      font-family: 'Open Sans', sans-serif;
+      text-transform: uppercase;
+      font-size: 2rem;
+      padding: 1rem;
+      border-radius: 2rem;
+      border: none;
+      background: grey;
+      color: white;
+      cursor: pointer; }
+    .publications-container .publications-info .publications-btn:hover {
+      background: black;
+      transition: 0.2s all ease; }
+
+.identification-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .identification-container .identification-header {
+    font-family: 'Cinzel', serif;
+    font-size: 4rem; }
+  .identification-container .identification-info {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    width: 40%;
+    text-align: center; }
+  .identification-container .identification-file {
+    border: 1px solid black;
+    margin: 2rem;
+    text-align: center;
+    width: 30%; }
+  .identification-container input[type=file] {
+    background: #333;
+    padding: 1.3rem; }
+  .identification-container .identification-email {
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    width: 30%; }
+  .identification-container .identification-textarea {
+    margin-top: 2rem;
+    height: 20%;
+    resize: none; }
+  .identification-container .identification-submit {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    background: grey;
+    color: white;
+    cursor: pointer;
+    margin-top: 2rem; }
+  .identification-container .identification-submit:hover {
+    background: black;
+    transition: 0.2s all ease; }
 
 .awards-intro {
   height: 30vh;
@@ -730,7 +827,6 @@ textarea {
   .allanmere-section .allanmere-pic {
     height: 100%;
     width: 50%;
-    background: #51c761;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -738,7 +834,10 @@ textarea {
   .allanmere-section .allenmere-pic__photo {
     height: 80%;
     width: 70%;
-    background: chartreuse; }
+    background: url(../img/allanmereaward.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
   .allanmere-section .allanmere-info {
     height: 100%;
     width: 50%;
@@ -776,7 +875,7 @@ textarea {
 .about-intro {
   height: 30vh;
   width: 100vw;
-  background: grey;
+  background: url(../img/overlay/cute-plant-overlay.png);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -818,7 +917,10 @@ textarea {
   .about-introduction__container .about-introduction-pic {
     height: 80%;
     width: 80%;
-    background: orange; }
+    background: url(../img/wellington-plant.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
 
 .values-section {
   height: 10vh;
@@ -903,12 +1005,11 @@ textarea {
   .membership-welcome__container .membership-welcome__paragraph {
     font-size: 1.5rem;
     font-family: 'Open sans', 'sans-serif';
-    width: 50%;
+    width: 60%;
     padding-top: 2rem; }
   .membership-welcome__container .membership-welcome__signup {
     font-size: 1.5rem;
-    font-family: 'Open sans', 'sans-serif';
-    padding-top: 40%; }
+    font-family: 'Open sans', 'sans-serif'; }
   .membership-welcome__container .membership-arrow {
     height: 20%; }
   .membership-welcome__container .membership-welcome__photo {
@@ -922,5 +1023,48 @@ textarea {
       height: 80%;
       width: 80%;
       background: crimson; }
+
+.membership-break {
+  height: 40vh;
+  width: 100vw;
+  background: yellow; }
+
+.membership-form__container {
+  height: 200vh;
+  width: 100vw;
+  background: green;
+  display: flex; }
+  .membership-form__container .membership-form__left {
+    height: 100%;
+    width: 60%;
+    background: pink; }
+  .membership-form__container .membership-form__right {
+    height: 100%;
+    width: 40%;
+    background: powderblue;
+    display: flex;
+    flex-wrap: wrap; }
+    .membership-form__container .membership-form__right .form-right__info {
+      height: 35%;
+      width: 100%;
+      background: red;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+      .membership-form__container .membership-form__right .form-right__info .form-right__header {
+        font-size: 4rem;
+        font-family: 'Cinzel';
+        width: 80%; }
+      .membership-form__container .membership-form__right .form-right__info .form-right__paragraph {
+        font-size: 1.5rem;
+        font-family: 'Open sans', 'sans-serif';
+        width: 50%;
+        padding-top: 3rem; }
+    .membership-form__container .membership-form__right .form-right__photo {
+      height: 65%;
+      width: 100%;
+      background: orange; }
 
 /*# sourceMappingURL=style.css.map */

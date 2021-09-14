@@ -1,7 +1,7 @@
 .about-intro{
     height: 30vh;
     width: 100vw;
-    background: grey;
+    background: url(../img/overlay/cute-plant-overlay.png);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +59,10 @@
     .about-introduction-pic{
         height: 80%;
         width: 80%;
-        background: orange;
+        background: url(../img/wellington-plant.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
