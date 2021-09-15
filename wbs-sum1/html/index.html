@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Wellington Botanical Society</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,34 +17,48 @@
 <body>
   
   
-  
-
-
-
-  
-    <section class="nav-section">
+      
+    <header class="header">
         
-        <header>
-            <nav class="nav">
+        <nav class="header-nav">
                 
-                <a href="../html/index.html"><img class="logo" src="../img/icons/wbs-my-logo.svg" alt="logo"></a>
+            <a href="../html/index.html"><img class="header-nav__logo" src="../img/icons/wbs-my-logo.svg" alt="logo"></a>
                 
-                <img class="hamburger" src="../img/icons/hamburger.svg" alt="hamburger">
-                <ul class="nav-list">
-                    <a href="../html/index.html"><li class="nav-list__items">Home</li></a>
-                    <a href="../html/about.html"><li class="nav-list__items">About</li></a>
-                    <a href="../html/events.html"><li class="nav-list__items">Events</li></a>
-                    <a href="../html/awards.html"><li class="nav-list__items">Awards</li></a>
-                    <a href="../html/resources.html"><li class="nav-list__items">Resources</li></a>
-                    <a href="../html/contact.html"><li class="nav-list__items">Contact</li></a>
-                </ul>
                 
-                <a href="../html/membership.html"><button class="membership-btn">Memberships</button></a>
+            <ul class="header-nav__ul">
+                <a href="../html/index.html"><li class="header-nav__li">Home</li></a>
+                <a href="../html/about.html"><li class="header-nav__li">About</li></a>
+                <a href="../html/events.html"><li class="header-nav__li">Events</li></a>
+                <a href="../html/awards.html"><li class="header-nav__li">Awards</li></a>
+                <a href="../html/resources.html"><li class="header-nav__li">Resources</li></a>
+                <a href="../html/contact.html"><li class="header-nav__li">Contact</li></a>
+            </ul>
+        
+            <a href="../html/membership.html"><button class="membership-btn">Memberships</button></a>            
+
+        <img class="hamburger" src="../img/icons/hamburger.svg" alt="hamburger">        
+        
+        </nav>    
+
+                
+
+
+        <div id="nav-mobile" class="nav-mobile">
+            <ul class="nav-mobile__ul">
+                <a href="../html/index.html"><li class="nav-mobile__li">Home</li></a>
+                <a href="../html/about.html"><li class="nav-mobile__li">About</li></a>
+                <a href="../html/events.html"><li class="nav-mobile__li">Events</li></a>
+                <a href="../html/awards.html"><li class="nav-mobile__li">Awards</li></a>
+                <a href="../html/resources.html"><li class="nav-mobile__li">Resources</li></a>
+                <a href="../html/contact.html"><li class="nav-mobile__li">Contact</li></a>
+                <a href="../html/membership.html"><li class="nav-mobile__li">Memberships</li></a>
+            </ul>
+        </div>
             
-            </nav>
-        </header>
+            
+    </header>
     
-    </section>
+
 
   
   
@@ -56,7 +71,7 @@
     <section class="intro-section">
         <div class="intro-div__one">
             <h1 class="intro-header">Welcome to the Wellington Botanical Society</h1>
-            <p class="intro-paragraph">Te Ropu Manaki i Nga Tamariki a Tane, o Te Whanganui a Tara</p>
+            <p class="intro-paragraph">Te Ropu Manaki i Nga Tamariki a Tane, o Te Whanganui a Tara.</p>
         <button class="intro-btn__cta">sign up now!</button>             
         </div>
            
@@ -214,6 +229,7 @@
         </footer>
     </section>
 
+    <script src="../script.js"></script>
 </body>
 
 

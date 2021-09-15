@@ -6,40 +6,55 @@
     background-size: cover;
 
 
-}
-
-.intro-div__one{
-    background: rgba(0,0,0,0.5);
-    height: 100%;
-    width: 55%;
-    display: flex;
-    justify-self: flex-end;
-    float: right;
-}
 
 
-.intro-div__text{
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+    .intro-div__one{
+        background: rgba(0,0,0,0.5);
+        height: 100%;
+        width: 55%;
+        display: flex;
+        float: right;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
 
 }
+
+
+
+
+
 .intro-header{
     font-family: 'Cinzel', serif;
-
+    font-size: 6rem;
+    color: white;
+    width: 70%;
+    margin-left: 3rem;
 
 }
 
 .intro-paragraph{
     font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    color: white;
+    margin: 3rem;
+    width: 50%;
 
 }
 
 .intro-btn__cta{
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
-
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    background: grey;
+    color: white;
+    cursor: pointer;
+    margin-left: 3rem;
 }
 
 
@@ -60,7 +75,7 @@
     display: flex;
     
     
-    .welcome-container{
+    &-container{
         height: 100%;
         width: 50%;
         display: flex;
@@ -69,7 +84,7 @@
         align-items: center; 
     }
 
-    .welcome-container__pic{
+    &-container__pic{
         height: 80%;
         width: 80%;
         background: url(../img/greenery.jpeg);
@@ -433,7 +448,7 @@ border-radius: 360%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 
 
     .index-identify__header{
@@ -449,8 +464,8 @@ border-radius: 360%;
         font-size: 1.5rem;
         width: 30%;
         text-align: center;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
 
     }
 

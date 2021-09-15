@@ -1,0 +1,11 @@
+//text mixins
+
+@mixin header-style {
+    font-size: 4rem;
+    font-family: 'Cinzel', serif;
+}
+
+@mixin paragraph-style {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+}

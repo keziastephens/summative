@@ -1,49 +1,38 @@
-.nav-section{
+.header{
     height: 10vh;
     width: 100vw;
-    background: white;
+
+    
+
+    &-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+
+    &-nav__logo{
+        height: 9vh;
+        margin-left: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+
+    &-nav__ul{
+        display: flex;
+        list-style: none;
+
+    }
+
+    &-nav__li{
+        padding: 2rem;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.2rem;
+
+    }
 
 }
-
-.nav{
-   display: flex; 
-   align-items: center;
-   justify-content: space-between;
-
-}
-
-
-
-.logo{
-    height: 9vh;
-    margin-top: 0.5vh;
-    margin-left: 1vh;
-
-}
-
-.hamburger{
-    height: 3rem;
-    display: none;
-
-}
-
-.nav-list{
-    list-style: none;
-    align-items: center;
-    display: flex;
-
-}
-
-
-.nav-list__items{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2rem;
-    letter-spacing: 0.1rem;
-    padding: 2rem;
-
-}
-
-
 
 
 .membership-btn{
@@ -57,11 +46,27 @@
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.1rem;
     margin-right: 2.5vh;
+
+    .membership-btn:hover{
+        background: black;
+        transition: 0.2s all ease;
+    }
     
 }
 
 
-.membership-btn:hover{
-    background: black;
-    transition: 0.2s all ease;
+.hamburger{
+    height: 2rem;
+    padding-right: 2rem;
+    cursor: pointer;
+    display: none;
 }
+
+
+@media #{$mobile}{
+    
+    .header-nav__ul{
+        display: none;
+    }
+}
+

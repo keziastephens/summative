@@ -1,11 +1,20 @@
-@import "nav";
 @import "resets";
+@import "var";
+@import "nav";
+@import "mixins";
 @import "index";
 @import "footer";
-@import "var";
 @import "contact";
 @import "events";
 @import "resources";
 @import "awards";
 @import "about";
 @import "membership";
+
+h1{
+    @include header-style;
+}
+p{
+    @include paragraph-style;
+    
+}
