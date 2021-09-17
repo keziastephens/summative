@@ -9,18 +9,41 @@
     background-size: cover;
     background-repeat: no-repeat;
     
-    .about-intro__header{
+    &__header{
         font-size: 5rem;
         font-family: 'Cinzel';
         color: white;
     }
 }
 
+    @media #{$mobile}{
+        .about-intro{
+            height: 20vh;
+
+            &__header{
+                font-size: 3rem;
+            }
+        }
+        
+    }
+
+    @media #{$tablet}{
+        .about-intro{
+            height: 25vh;
+
+            &__header{
+                font-size: 4rem;
+            }
+        }
+        
+    }
+
 
 .about-introduction__container{
     height: 100vh;
     width: 100vw;
     display: flex;
+    flex-wrap: wrap;
 
 
     .about-introduction__text{
@@ -42,8 +65,7 @@
 
     .about-introduction__paragraph{
         font-family: 'Open Sans', sans-serif;
-        width: 50%; 
-        padding-top: 4rem;   
+        width: 50%;    
         font-size: 1.5rem;  
         text-align: center; 
     }
@@ -66,7 +88,58 @@
     }
 }
 
+//something in code not working, wont pickup queries without !important
+    @media #{$mobile}{
 
+        .about-introduction__text{
+            height: 50% !important;
+            width: 100% !important;
+
+        }
+        .about-introduction__header{
+            font-size: 3rem !important;
+            width: 80% !important; 
+        }
+        .about-introduction__paragraph{
+            font-size: 1rem !important;
+            width: 80% !important;
+            padding-top: 1.5rem;
+        }
+        .about-introduction__photo{
+            height: 50% !important;
+            width: 100% !important;
+        }
+    }
+
+
+    @media #{$tablet}{
+        .about-introduction__text{
+            height: 50% !important;
+            width: 100% !important;
+
+        }
+        .about-introduction__header{
+            font-size: 3rem !important;
+            width: 80% !important; 
+        }
+        .about-introduction__paragraph{
+            font-size: 1.3rem !important;
+            width: 80% !important;
+            padding-top: 2rem;
+        }
+        .about-introduction__photo{
+            height: 50% !important;
+            width: 100% !important;
+        }
+
+
+    }
+
+    @media #{$desktop}{
+        .about-introduction__paragraph{
+            padding-top: 4rem;
+        }
+    }
 
 .values-section{
     height: 10vh;
@@ -131,3 +204,13 @@
     
     }
 
+    @media #{$mobile}{
+        .core-value__paragraph{
+            font-size: 1.5rem;
+        }
+    }
+    @media #{$tablet}{
+        .core-value__paragraph{
+            font-size: 1.2rem;
+        }
+    }

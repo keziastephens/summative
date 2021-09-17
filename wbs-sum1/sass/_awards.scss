@@ -9,12 +9,36 @@
     background-size: cover;
     background-repeat: no-repeat;
     
-    .awards-intro__header{
+    &__header{
         font-size: 5rem;
         font-family: 'Cinzel';
         color: white;
     }
 }
+
+@media #{$mobile}{
+    .awards-intro{
+        height: 20vh;
+
+        &__header{
+            font-size: 3rem;
+        }
+    }
+    
+}
+
+@media #{$tablet}{
+    .awards-intro{
+        height: 25vh;
+
+        &__header{
+            font-size: 4rem;
+        }
+    }
+    
+}
+
+
 
 .jubilee-section{
     height: 100vh;

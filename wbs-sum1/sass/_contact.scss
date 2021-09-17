@@ -9,14 +9,34 @@
     background-size: cover;
     background-repeat: no-repeat;
     
-    .contact-intro__header{
+    &__header{
         font-size: 5rem;
         font-family: 'Cinzel';
         color: white;
     }
 }
 
+@media #{$mobile}{
+    .contact-intro{
+        height: 20vh;
 
+        &__header{
+            font-size: 3rem;
+        }
+    }
+    
+}
+
+@media #{$tablet}{
+    .contact-intro{
+        height: 25vh;
+
+        &__header{
+            font-size: 4rem;
+        }
+    }
+    
+}
 
 .contact-container{
     min-height: 100vh;
@@ -26,54 +46,89 @@
     align-items: center;
     text-align: center;    
 
-}
 
-.contact-container__text{
-    height: 100%;
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    &__text{
+        height: 100%;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
 
-}
+    }
 
+    &__header{
+        font-size: 5rem;
+        font-family: 'Cinzel';    
 
-.contact-container__header{
-    font-size: 5rem;
-    font-family: 'Cinzel';    
+    }
 
-}
-
-.contact-container__paragraph{
-    font-size: 2rem;
-    font-family: 'Open sans', 'sans-serif';
-}
-
-.contact-container__form{
-    height: 100%;
-    width: 55%;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    font-family: 'Open sans', 'sans-serif';
-
-}
-
-.contact-form__message{
-    font-family: 'Open sans', 'sans-serif';
-    padding: 0.5rem;
+    &__paragraph{
+        font-size: 2rem;
+        font-family: 'Open sans', 'sans-serif';
+    }
     
+    &__form{
+        height: 100%;
+        width: 55%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        font-family: 'Open sans', 'sans-serif';
+
+    }
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .contact-form{
     padding: 0.5rem;
-}
-input{
     height: 4rem;
     width: 50rem;
+    
+    &__message{
+        font-family: 'Open sans', 'sans-serif';
+        padding: 0.5rem;
+        
+    }
+
+    &__button{
+        @include button-web;
+        margin-top: 2rem;
+
+
+    }
+
+    &__button:hover{
+        background: black;
+        transition: 0.2s all ease;
+    }
+
+
+    &__message{
+        width: 100%;
+        height: 25rem;
+        resize: none;
+    }
+
 }
+
+
 
 .contact-container__div{
     padding: 1rem 0;
@@ -84,28 +139,5 @@ input{
     font-size: 1.2rem;
 }
 
-.contact-form__button{
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    font-size: 2rem;
-    padding: 1rem;
-    border-radius: 2rem;
-    border: none;
-    background: grey;
-    color: white;
-    cursor: pointer;
-    margin-top: 2rem;
 
 
-}
-
-.contact-form__button:hover{
-    background: black;
-    transition: 0.2s all ease;
-}
-
-textarea{
-    width: 100%;
-    height: 25rem;
-    resize: none;
-}

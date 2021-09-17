@@ -9,14 +9,34 @@
     background-size: cover;
     background-repeat: no-repeat;
     
-    .membership-intro__header{
+    &__header{
         font-size: 5rem;
         font-family: 'Cinzel';
         color: white;
     }
 }
 
+@media #{$mobile}{
+    .membership-intro{
+        height: 20vh;
 
+        &__header{
+            font-size: 3rem;
+        }
+    }
+    
+}
+
+@media #{$tablet}{
+    .membership-intro{
+        height: 25vh;
+
+        &__header{
+            font-size: 4rem;
+        }
+    }
+    
+}
 
 .membership-welcome__container{
     height: 100vh;
@@ -95,11 +115,6 @@
     background: green;
     display: flex;
 
-    .membership-form__left{
-        height: 100%;
-        width: 60%;
-        background: pink;
-    }
 
     .membership-form__right{
         height: 100%;
@@ -145,4 +160,24 @@
 
 
     }
+}
+
+.membership-form__left{
+    height: 100%;
+    width: 60%;
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    
+    .membership-form__left-title{
+        height: 2rem;
+        width: 25rem;
+    }
+
+
+}
+
+
+.input-membership{
+
 }

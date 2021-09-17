@@ -13,6 +13,7 @@
 
 h1{
     @include header-style;
+    color: $main-heading;
 }
 p{
     @include paragraph-style;

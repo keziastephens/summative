@@ -1,99 +1,60 @@
-.membership-intro {
-  height: 30vh;
-  width: 100vw;
-  background: grey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-  .membership-intro .membership-intro__header {
-    font-size: 5rem;
-    font-family: 'Cinzel';
-    color: white; }
+/*
+Error: Undefined variable: "$mobile".
+        on line 19 of /Users/270036592/Desktop/wbs-sum1/sass/membership.scss
 
-.membership-welcome__container {
-  height: 100vh;
-  width: 100vw;
-  display: flex; }
-  .membership-welcome__container .membership-welcome__info {
-    height: 100%;
-    width: 50%;
-    background: orchid;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center; }
-  .membership-welcome__container .membership-welcome__header {
-    font-size: 4rem;
-    font-family: 'Cinzel';
-    width: 50%;
-    text-align: center; }
-  .membership-welcome__container .membership-welcome__paragraph {
-    font-size: 1.5rem;
-    font-family: 'Open sans', 'sans-serif';
-    width: 60%;
-    padding-top: 2rem; }
-  .membership-welcome__container .membership-welcome__signup {
-    font-size: 1.5rem;
-    font-family: 'Open sans', 'sans-serif'; }
-  .membership-welcome__container .membership-arrow {
-    height: 20%; }
-  .membership-welcome__container .membership-welcome__photo {
-    height: 100%;
-    width: 50%;
-    background: orange;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .membership-welcome__container .membership-welcome__photo .membership-welcome__pic {
-      height: 80%;
-      width: 80%;
-      background: crimson; }
+14:         font-family: 'Cinzel';
+15:         color: white;
+16:     }
+17: }
+18: 
+19: @media #{$mobile}{
+20:     .membership-intro{
+21:         height: 20vh;
+22: 
+23:         &__header{
+24:             font-size: 3rem;
 
-.membership-break {
-  height: 40vh;
-  width: 100vw;
-  background: yellow; }
-
-.membership-form__container {
-  height: 200vh;
-  width: 100vw;
-  background: green;
-  display: flex; }
-  .membership-form__container .membership-form__left {
-    height: 100%;
-    width: 60%;
-    background: pink; }
-  .membership-form__container .membership-form__right {
-    height: 100%;
-    width: 40%;
-    background: powderblue;
-    display: flex;
-    flex-wrap: wrap; }
-    .membership-form__container .membership-form__right .form-right__info {
-      height: 35%;
-      width: 100%;
-      background: red;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center; }
-      .membership-form__container .membership-form__right .form-right__info .form-right__header {
-        font-size: 4rem;
-        font-family: 'Cinzel';
-        width: 80%; }
-      .membership-form__container .membership-form__right .form-right__info .form-right__paragraph {
-        font-size: 1.5rem;
-        font-family: 'Open sans', 'sans-serif';
-        width: 50%;
-        padding-top: 3rem; }
-    .membership-form__container .membership-form__right .form-right__photo {
-      height: 65%;
-      width: 100%;
-      background: orange; }
-
-/*# sourceMappingURL=membership.css.map */
+Backtrace:
+/Users/270036592/Desktop/wbs-sum1/sass/membership.scss:19
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/interpolation.rb:170:in `_perform'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:555:in `block in run_interp_no_strip'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:553:in `map'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:553:in `run_interp_no_strip'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:560:in `run_interp'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:525:in `visit_media'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$mobile\".\A         on line 19 of /Users/270036592/Desktop/wbs-sum1/sass/membership.scss\A \A 14:         font-family: 'Cinzel';\A 15:         color: white;\A 16:     }\A 17: }\A 18: \A 19: @media #{$mobile}{\A 20:     .membership-intro{\A 21:         height: 20vh;\A 22: \A 23:         &__header{\A 24:             font-size: 3rem;"; }

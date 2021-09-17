@@ -1,5 +1,5 @@
 .header{
-    height: 10vh;
+    min-height: 10vh;
     width: 100vw;
 
     
@@ -32,6 +32,45 @@
 
     }
 
+
+    .nav-mobile{
+        // is not applying style in the document flow, can't find issue so have
+        // applied the display none to inline styling on html
+        display: none; 
+        width: 100vw;
+        height: 90vh;
+        background: url(../img/overlay/cute-plant-overlay.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+    
+    
+        &__ul{
+            font-size: 2rem;    
+            list-style: none;
+    
+        }
+    
+        &__li{
+            padding: 1rem; 
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 0.1rem;
+            color: white;       
+        }
+    }
+
+    // @media #{$mobile}{
+    //     min-height:10vh ;
+    // }
+    
+    
+
 }
 
 
@@ -55,6 +94,36 @@
 }
 
 
+// .nav-mobile{
+//     display: none; 
+//     width: 100vw;
+//     height: 90vh;
+//     background: url(../img/overlay/cute-plant-overlay.png);
+//     background-position: center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     z-index: 5;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+
+
+
+//     &__ul{
+//         font-size: 2rem;    
+//         list-style: none;
+
+//     }
+
+//     &__li{
+//         padding: 1rem; 
+//         font-family: 'Open Sans', sans-serif;
+//         letter-spacing: 0.1rem;
+//         color: white;       
+//     }
+// }
+
 .hamburger{
     height: 2rem;
     padding-right: 2rem;
@@ -68,5 +137,32 @@
     .header-nav__ul{
         display: none;
     }
+
+    .hamburger{
+        display: block;
+    }
+
+    .membership-btn{
+        display: none !important;
+    }
+
+
+}
+
+@media #{$tablet}{
+    
+    .header-nav__ul{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .membership-btn{
+        display: none;
+    }
+
+
 }
 
